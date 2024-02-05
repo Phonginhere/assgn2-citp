@@ -1,0 +1,216 @@
+:root {
+    --white: white;
+    --red: red;
+    --green: green;
+    --blue: blue;
+    --yellowGreen: rgb(117, 128, 0);
+    --skyblue: skyblue;
+    --gray: gray:
+  }
+  
+  * {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  fieldset {
+    margin: 0 0 15px;
+    padding: 0 0 20px;
+  }
+  
+  form {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  /* input#btn {
+    margin-top: 25px;
+    width: 100%;
+  } */
+  
+  #inputsubContainer {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    height: 55px;
+    padding: 5px;
+    margin: 20% 0 0 25%;
+  }
+  
+  #btnInput,
+  #btnBack {
+    flex-grow: 1;
+    /* this one line tells button to stretch across all available width */
+    width: 45%;
+    padding: 10px;
+    margin: 0 5px;
+    color: var(--white);
+    text-align: center;
+    font-size: 1.5em;
+  }
+  
+  #btnInput:nth-child(1) {
+    background-color: var(--red);
+  }
+  
+  #btnInput:nth-child(2) {
+    background-color: var(--green);
+  }
+  
+  #btnBack {
+    background-color: var(--yellowGreen);
+  }
+  
+  .box {
+    padding: 0.5rem;
+  }
+  
+  label {
+    display: inline;
+  }
+  
+  input {
+    display: inline-block;
+    width: 100%;
+    padding: 1rem;
+  }
+  
+  input:required:invalid,
+  input:focus:invalid {
+    background-position: right top;
+    background-repeat: no-repeat;
+    --box-shadow: none;
+  }
+  
+  input:required:valid {
+    background-position: right top;
+    background-repeat: no-repeat;
+  }
+  
+  .help {
+    margin: 2rem;
+  
+  }
+  
+  
+  /* dropdown select option*/
+  
+  select {
+  
+    /* resetting */
+    appearance: none;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    margin: 0;
+  
+    /* styling */
+    font: inherit;
+    background-color: var(--white);
+    border: thin solid var(--blue);
+    display: inline-block;
+    border-radius: 4px;
+    padding: 0.5em 3.5em 0.5em 1em;
+    line-height: 1.5em;
+  
+  
+  
+  }
+  
+  
+  /* arrows */
+  
+  select.classic {
+    background-repeat: no-repeat;
+    background-image:
+      linear-gradient(46deg, transparent 50%, var(--blue) 50%),
+      linear-gradient(136deg, var(--blue) 50%, transparent 50%),
+      linear-gradient(to right, var(--skyblue), var(--skyblue));
+    background-size:
+      5px 5px,
+      5px 5px,
+      2.6em 2.6em;
+    background-position:
+      calc(100% - 20px) calc(1em + 2px),
+      calc(100% - 15px) calc(1em + 2px),
+      100% 0;
+  }
+  
+  select.classic:focus {
+    outline: 0;
+    border-color: var(--gray);
+    background-repeat: no-repeat;
+  
+    background-size:
+      5px 5px,
+      5px 5px,
+      2.6em 2.6em;
+    background-image:
+      linear-gradient(46deg, var(--white) 50%, transparent 50%),
+      linear-gradient(136deg, transparent 50%, var(--white) 50%),
+      linear-gradient(to right, var(--gray), var(--gray));
+    background-position:
+      calc(100% - 15px) 1em,
+      calc(100% - 20px) 1em,
+      100% 0;
+  
+  }
+  
+  /* End Dropdown */
+  
+  @media all and (min-width: 35rem) and (max-width: 60rem) {
+  
+    .box {
+      float: left;
+      width: 50%;
+    }
+  
+    label {
+      display: block;
+    }
+  
+  }
+  
+  @media all and (min-width:60rem) {
+    label {
+      display: inline;
+      width: 90px;
+      float: left;
+    }
+  
+    .nav-menu {
+      width: 25px;
+    }
+  
+    .box {
+      width: 50%;
+      float: left;
+    }
+  
+    input {
+      width: 75%;
+    }
+  
+    select {
+      padding: 0.5em auto 0.5em 1em;
+    }
+  
+    #masthead {
+      padding: 9rem;
+    }
+  }
+  
+  @media only screen and (min-width: 960px) and (max-width: 1051px) {
+  
+    input,
+    label {
+      width: 100%;
+    }
+  
+    select {
+      padding: 0.5em auto 0.5em 1em;
+    }
+  }

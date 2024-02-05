@@ -1,0 +1,69 @@
+img#img-profile {
+    width: 13em;
+    height: 11em;
+    margin: auto;
+}
+
+/* Add responsive CSS for two columns */
+.table-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Add spacing between columns */
+}
+
+.table-group {
+    flex-basis: calc(50% - 1rem);
+    max-width: calc(50% - 1rem);
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: none;
+    flex-basis: calc(50% - 2rem);
+    max-width: calc(50% - 2rem);
+}
+
+/* Add styles for displaying four rows in each column */
+.table tbody {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.table tr {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #ddd; /* Optional: Add a separator between rows */
+}
+.popup{
+    width: auto;
+}
+
+
+/* Add CSS for two columns */
+.table-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Add spacing between columns */
+}
+
+.table-group {
+    flex-basis: calc(50% - 1rem);
+    max-width: calc(50% - 1rem);
+}
+
+/* Add a media query for responsive behavior */
+@media (max-width: 1000px) {
+    .table-group {
+        flex-basis: 100%; /* Join two columns into one */
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,131 @@
+:root{
+    --blue: #155799;
+    --green: #159957;
+    --blackform: rgba(11, 15, 13, 0.582);
+    --greyform: rgba(255, 255, 255, 0.125);
+    --blackbutton: #030804;
+    --whitetext: white;
+    --greywhiteTextform: rgb(177, 175, 175);
+    --atagColor: rgb(74, 146, 235);
+    --atagHoover: cadetblue;
+    --colorAll: whitesmoke;
+}
+body {
+    font-family: PT Sans, sans-serif;
+    color: var(--colorAll);
+    background: linear-gradient(to left, var(--blackbutton), var(--blue));
+}
+
+form {
+    width: 36rem;
+    border: 1px solid var(--greyform);
+    background-color: var(--blackform);
+    -webkit-backdrop-filter: saturate(180%) blur(14px);
+    backdrop-filter: saturate(180%) blur(14px);
+    color: var(--colorAll);
+    border-radius: 15px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+input[type=text],
+input[type=password] {
+    box-sizing: border-box;
+    border-radius: 6px;
+    padding: 18px 21px;
+    margin: 10px 0;
+    width: 100%;
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+button {
+    border-radius: 8px;
+    width: 100%;
+    font-size: 20px;
+    padding: 14px 20px;
+    margin: 7px 0;
+    color: var(--whitetext);
+    background-color: var(--blackbutton);
+}
+
+.headingsContainer p {
+    color: var(--greywhiteTextform);
+}
+
+
+.headingsContainer {
+    text-align: center;
+}
+
+
+.mainContainer {
+    padding: 18px;
+}
+
+
+.subContainer {
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    display: flex;
+}
+
+.subContainer a {
+    font-size: 18px;
+    margin-bottom: 13px;
+}
+
+.forgotpass a {
+    color: var(--atagColor);
+}
+
+.forgotpass a:hover {
+    color: var(--atagHoover);
+}
+
+.forgotpass a:link {
+    text-decoration: none;
+}
+
+/* For the responsiveness of the page, using media queries  */
+@media screen and (max-width: 601px) {
+    form {
+        width: 25rem;
+    }
+}
+
+@media screen and (max-width: 401px) {
+    form {
+        width: 20rem;
+    }
+}
+
+/* Begin External link outside the form */
+.listing a {
+    color: var(--whitetext);
+    font-weight: 700;
+    margin: 0 15px;
+}
+.listing a:hover{
+    color: var(--atagHoover);
+}
+.margin-top-20{
+    margin-top: 20px;
+}
+
+.flex-flex {
+    display: flex;
+}
+
+.center-center {
+    align-items: center;
+    justify-content: center;
+}
+/* End External link outside the form */

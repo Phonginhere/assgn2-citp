@@ -1,0 +1,2 @@
+RewriteEngine on
+ErrorDocument 404 /cos10026/s104334842/assign2/error.php
